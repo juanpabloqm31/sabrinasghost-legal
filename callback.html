@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TikTok Auth – Sabrina's Ghost</title>
+  <style>
+    body { font-family: -apple-system, sans-serif; text-align: center;
+           padding: 60px 24px; background: #1a0a2e; color: #e8d5ff; }
+    h2   { font-size: 1.6rem; margin-bottom: 8px; }
+    code { display: block; background: #2d1b4e; padding: 16px 24px;
+           border-radius: 10px; font-size: 1rem; margin: 24px auto;
+           max-width: 700px; word-break: break-all; color: #c084fc; }
+    p    { color: #a78bda; }
+  </style>
+</head>
+<body>
+  <h2>✅ Authorization successful!</h2>
+  <p>Copy the full URL below and paste it back into your terminal:</p>
+  <code id="url"></code>
+  <p>You can close this tab after copying.</p>
+  <script>
+    document.getElementById('url').textContent = window.location.href;
+  </script>
+</body>
+</html>
